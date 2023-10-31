@@ -7,24 +7,32 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <form action="">
-      <h1>PokeSpotter</h1>
-      <select name="" id="">
-        <option value="">Types</option>
-      </select>
-      <input type="submit" value="Filter by type" />
-      <button onclick="window.location.reload()">Reset</button>
-      <script src="./script.js"></script>
-    </form>
-
-    <!-- Input Name of Pokemon -->
-    <form action="">
-        <input type="text" name="" id="" placeholder="Enter Pokémon Name">
-    </form>
+    <div class="content-wrapper">
+      <header>
+        <h1>PokeDex</h1>
+      </header>
+      <main>
+        <form action="" id="pokemon-type-filter">
+          <select name="" id="type-filter">
+            <option value="">Types</option>
+          </select>
+          <input type="submit" value="Filter by type" />
+          <button onclick="window.location.reload()">Reset</button>
+          <script src="./script.js"></script>
+        </form>
     
-    <!-- Pokemon cards -->
-    <section class="" id="PokemonCards">
+        <!-- Input Name of Pokemon -->
+        <form action="GET" id="pokemon-search-form" class="">
+            <input type="text" name="" id="pokemon-search-input" placeholder="Enter Pokémon Name">
+        </form>
+        <section class="form-spacers">
 
-    </section>
+        </section>
+        <!-- Pokemon cards -->
+        <section class="" id="pokedex">
+
+        </section>
+      </main>
+    </div>
   </body>
 </html>
