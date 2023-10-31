@@ -1,38 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PokeDex</title>
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
-    <div class="content-wrapper">
-      <header>
-        <h1>PokeDex</h1>
-      </header>
-      <main>
-        <form action="" id="pokemon-type-filter">
-          <select name="" id="type-filter">
-            <option value="">Types</option>
-          </select>
-          <input type="submit" value="Filter by type" />
-          <button onclick="window.location.reload()">Reset</button>
-          <script src="./script.js"></script>
-        </form>
-    
-        <!-- Input Name of Pokemon -->
-        <form action="GET" id="pokemon-search-form" class="">
-            <input type="text" name="" id="pokemon-search-input" placeholder="Enter Pokémon Name">
-        </form>
-        <section class="form-spacers">
-
-        </section>
-        <!-- Pokemon cards -->
-        <section class="" id="pokedex">
-
-        </section>
-      </main>
-    </div>
-  </body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+        <title>GeeksterMon</title>
+        <script defer src="./script.js"></script>
+    </head>
+    <body>
+        <div class="content-wrapper">
+            <header>
+                <h1>PokeDex</h1>
+            </header>
+            <main>
+                <form id="pokemon-type-filter">
+                    <select name="type" class="type-filter">
+                        <option value="">Types</option>
+                    </select>
+                    <input type="submit" value="Filter by Type"/>
+                    
+                    <button onClick="window.location.reload();">Reset</button>
+                </form>
+                <form id="pokemon-search-form" class="" action="" method="GET">
+                    <input id="pokemon-search-input" type="text" name="" placeholder="Enter Pokémon Name"/>
+                </form>
+                <section class="form-spacers"></section>
+                <section id="pokedex">
+                </section>
+            </main>  
+        </div>
+    </body>
 </html>
